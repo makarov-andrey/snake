@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 20px;
+}
+
+#game {
+    margin: 0 auto;
+    display: block;
+    color: #090;
+}
