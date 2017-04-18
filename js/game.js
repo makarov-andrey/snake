@@ -207,13 +207,13 @@ function Game (canvasId, settings) {
     };
 
     this.onSnakeMove = function () {
-        this.checkSnakeAndAppleConvergence();
+        this.checkEating();
         this.checkFieldEdges();
         this.checkCrashing();
         this.render();
     };
 
-    this.checkSnakeAndAppleConvergence = function () {
+    this.checkEating = function () {
         var head = this.snake.getHead(),
             apple = this.isAppleOnCell(head);
         if (apple) {
